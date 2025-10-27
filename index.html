@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Busca de Filmes (IMDb via OMDb)</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Menu: Escolher filtro filme/Escolher filtro ator -->
+  <select id="tipo-busca">
+    <option value="filme" selected>Filme</option>
+    <option value="ator">Ator</option>
+  </select>
+</div>
+
+  <!-- CONTAINER PRINCIPAL -->
+  <div class="container">
+
+    <!-- CABEÇALHO COM TEXTO EXPLICATIVO -->
+    <header>
+      <h1>Projeto: Busca de Filmes (API IMDb via OMDb)</h1>
+      <p>
+        Este exemplo mostra como conectar uma página HTML com uma API real da internet.  
+        Vamos buscar filmes pelo título usando a API gratuita da OMDb, que traz dados do IMDb.
+      </p>
+    </header>
+
+    <hr>
+
+    <!-- ÁREA DE PESQUISA -->
+    <section id="container-pesquisa">
+      <h2>Etapa 1 — Fazer a busca</h2>
+      <p>Digite o nome de um filme ou o ator e clique no botão <strong>Buscar</strong>.</p>
+
+      <div class="barra-pesquisa">
+         <input id="campo-busca" type="text" placeholder="Ex.: Batman ou Robert Downey Jr..." />
+        <button id="botao-buscar" onclick="buscarFilmes()">Buscar</button>
+      </div>
+
+      <p id="mensagem-status" class="status"></p>
+    </section>
+
+    <hr>
+
+    <!-- RESULTADOS -->
+    <section id="container-resultados">
+      <h2>Etapa 2 — Resultados da busca</h2>
+      <p>Abaixo aparecerão os pôsteres e nomes dos filmes retornados pela API:</p>
+      <div id="lista-resultados" class="grade"></div>
+    </section>
+
+    <hr>
+
+    <!-- PAGINAÇÃO -->
+    <section id="container-paginacao">
+      <h2> Etapa 3 — Navegar entre páginas</h2>
+      <p>Use os botões para ver mais resultados.</p>
+      <div class="paginacao">
+        <button id="botao-anterior" onclick="paginaAnterior()">◀ Anterior</button>
+        <button id="botao-proximo" onclick="proximaPagina()">Próxima ▶</button>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- RODAPÉ EXPLICATIVO -->
+    <footer>
+      <p>
+            Aula Senac - Turma A
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

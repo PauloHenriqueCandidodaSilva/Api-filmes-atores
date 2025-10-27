@@ -1,0 +1,116 @@
+/* ===== ESTILO GERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #d108d1;
+}
+
+p {
+  line-height: 1.5;
+}
+
+hr {
+  margin: 25px 0;
+  border: 0.5px solid #334155;
+}
+
+/* ===== ÁREA DE BUSCA ===== */
+.barra-pesquisa {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.barra-pesquisa input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: white;
+}
+
+.barra-pesquisa button {
+  padding: 8px 14px;
+  background-color: #d108d1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.barra-pesquisa button:hover {
+  filter: brightness(1.1);
+}
+
+.status {
+  color: #a5b4fc;
+  font-size: 14px;
+  min-height: 20px;
+  margin-top: 8px;
+}
+
+/* ===== RESULTADOS ===== */
+.grade {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #f8fafc;
+}
+
+.card p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* ===== PAGINAÇÃO ===== */
+.paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.paginacao button {
+  padding: 6px 12px;
+  background: #334155;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.paginacao button:hover {
+  background: #475569;
+}
